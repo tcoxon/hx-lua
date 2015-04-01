@@ -1,3 +1,11 @@
+Note
+====================
+
+This repo is forked from the original [MattTuttle/hx-lua](https://github.com/MattTuttle/hx-lua).
+
+**What's different:** correctly supports both neko and cpp & added support to flash
+
+
 Run Lua code in Haxe
 ====================
 
