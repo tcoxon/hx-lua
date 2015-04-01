@@ -5,7 +5,7 @@ import cpp.Lib;
 #elseif neko
 import neko.Lib;
 #elseif flash
-import Lua as LuaAs3;
+import Lua as LuaAs3; // this Lua class is from crossbridge-lua.swc
 #end
 
 class Lua
