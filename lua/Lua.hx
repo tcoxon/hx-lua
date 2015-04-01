@@ -312,7 +312,7 @@ class Lua
 			funcs[l].push(v);
 				
 			LuaAs3.lua_pushnumber(l, funcs[l].length - 1);
-			LuaAs3.lua_pushnumber(l, 1245); // TODO: how to get the number of args at runtime?
+			LuaAs3.lua_pushnumber(l, untyped v.length); // v.length gives the number of arguments
 			LuaAs3.lua_pushcclosure(l, haxe_callback, 2);
 		}
 		else if (Std.is(v, Array))
@@ -351,9 +351,9 @@ class Lua
 		var funcIndex = Std.int(LuaAs3.lua_tonumberx(l, lua_upvalueindex(1), 0));
 		var root = funcs[l][funcIndex];
 		var expected_args = Std.int(LuaAs3.lua_tonumberx(l, lua_upvalueindex(2), 0));
-		//if (num_args != expected_args)
-			//trace('Expected $expected_args arguements, received $num_args');
-		//else
+		if (num_args != expected_args)
+			trace('Expected $expected_args arguements, received $num_args. The function is not called.');
+		else
 		{
 			var args = [];
 			for (i in 0...num_args)
