@@ -5,6 +5,8 @@ This repo is forked from the original [MattTuttle/hx-lua](https://github.com/Mat
 
 **What's different:** correctly supports both neko and cpp & added support to flash
 
+The ndll's are not up-to-date. Run `lime rebuild lua windows -clean` to rebuild the ndll (replace `windows` with other platforms at will)
+
 
 Run Lua code in Haxe
 ====================
