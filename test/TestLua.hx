@@ -1,3 +1,5 @@
+import lua.Lua;
+
 class TestLua extends haxe.unit.TestCase
 {
 
@@ -74,6 +76,16 @@ class TestLua extends haxe.unit.TestCase
 	{
 		assertEquals(15, Lua.run("return num(true, 1)", {
 			num: function(a:Bool, b:Int) { return 15; }
+		}));
+	}
+	
+	public function testMultipleFunctions()
+	{
+		assertEquals(66, Lua.run("return num1(true, 1) + num2(true, 1) + num3(true, 1) + num4(true, 1)", {
+			num1: function(a:Bool, b:Int) return 15,
+			num2: function(a:Bool, b:Int) return 16,
+			num3: function(a:Bool, b:Int) return 17,
+			num4: function(a:Bool, b:Int) return 18,
 		}));
 	}
 

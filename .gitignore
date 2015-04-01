@@ -6,3 +6,4 @@ all_objs
 
 .DS_Store
 Thumbs.db
+*.swf
