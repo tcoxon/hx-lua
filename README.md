@@ -1,7 +1,17 @@
+Note
+====================
+
+This repo is forked from the original [MattTuttle/hx-lua](https://github.com/MattTuttle/hx-lua).
+
+**What's different:** correctly supports both neko and cpp & added support to flash
+
+The ndll's are not up-to-date. Run `lime rebuild lua windows -clean` to rebuild the ndll (replace `windows` with other platforms at will)
+
+
 Run Lua code in Haxe
 ====================
 
-Run any Lua code inside Haxe on neko/cpp targets. Has the option of passing a context object that will set variables before running the script.
+Run any Lua code inside Haxe on neko/cpp/flash targets. Has the option of passing a context object that will set variables before running the script.
 
 ```haxe
 var result = Lua.run("return true"); // returns a Bool to Haxe
