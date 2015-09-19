@@ -272,6 +272,7 @@ static value lua_load_libs(value inHandle, value inLibs)
 		{ "string", luaopen_string },
 		{ "table", luaopen_table },
 		{ "coroutine", luaopen_coroutine },
+		{ "lfs", luaopen_lfs },
 		{ NULL, NULL }
 	};
 

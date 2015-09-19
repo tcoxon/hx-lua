@@ -29,6 +29,7 @@
 		<file name="lua/lundump.c" />
 		<file name="lua/lvm.c" />
 		<file name="lua/lzio.c" />
+		<file name="lua/lfs.c" />
 	</files>
 
 	<files id="lua-libs">
