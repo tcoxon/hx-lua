@@ -3,7 +3,7 @@ Note
 
 This repo is forked from the original [MattTuttle/hx-lua](https://github.com/MattTuttle/hx-lua).
 
-**What's different:** correctly supports both neko and cpp
+**What's different:** correctly supports both neko and cpp, also added luafilesystem library into lua
 
 The ndll's are not up-to-date. Run `lime rebuild lua windows -clean` to rebuild the ndll (replace `windows` with other platforms at will)
 
