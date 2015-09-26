@@ -33,6 +33,7 @@
 	</files>
 
 	<files id="lua-libs">
+		<file name="lua/lutf8lib.c" />
 		<file name="lua/lauxlib.c" />
 		<file name="lua/lbaselib.c" />
 		<file name="lua/lmathlib.c" />
