@@ -5,7 +5,7 @@ This repo is forked from the original [MattTuttle/hx-lua](https://github.com/Mat
 
 **What's different:** correctly supports both neko and cpp, also added luafilesystem library into lua
 
-The ndll's are not up-to-date. Run `lime rebuild lua windows -clean` to rebuild the ndll (replace `windows` with other platforms at will)
+The ndll's are not up-to-date. Run `flow build lua windows --clean`, for x64 `flow build lua windows --arch 64 --clean`, or `lime rebuild lua windows -clean` to rebuild the ndll (replace `windows` with other platforms at will)
 
 
 Run Lua code in Haxe
