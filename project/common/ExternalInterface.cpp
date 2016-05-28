@@ -116,7 +116,7 @@ value lua_value_to_haxe(lua_State *l, int lua_v)
 		case LUA_TTHREAD:
 		case LUA_TLIGHTUSERDATA:
 			v = alloc_null();
-			printf("return value not supported");
+			printf("return value not supported\n");
 			break;
 	}
 	return v;
@@ -214,7 +214,7 @@ int haxe_to_lua(value v, lua_State *l)
 			haxe_array_to_lua(v, l);
 			break;
 		case valtAbstractBase: // should abstracts be handled??
-			printf("abstracts not supported");
+			printf("abstracts not supported\n");
 			return 0;
 		case valtObject: // falls through
 		case valtEnum: // falls through
